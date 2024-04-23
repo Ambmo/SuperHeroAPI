@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SuperheroAPI</name>
+    </assembly>
+    <members>
+        <member name="T:SuperheroAPI.Controllers.FavoriteController">
+            <summary>
+            Controller for managing Favorite Characters into SQL lite DB.
+            </summary>
+        </member>
+        <member name="M:SuperheroAPI.Controllers.FavoriteController.#ctor(SuperheroAPI.Services.Interfaces.IFavoriteService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SuperheroAPI.Controllers.FavoriteController"/> class.
+            </summary>
+            <param name="favoriteService">The favorite service.</param>
+        </member>
+        <member name="M:SuperheroAPI.Controllers.FavoriteController.AddFavorite(SuperHeroAPI.Models.Favorite)">
+            <summary>
+            Add Favorite Character into DB with attached SuperheroId, UserId
+            </summary>
+            <param name="favorite">The favorite model.</param>
+            <returns>Return the added model.</returns>
+        </member>
+        <member name="M:SuperheroAPI.Controllers.FavoriteController.GetAllFavorites">
+            <summary>
+            Get all favorite characters.
+            </summary>
+            <returns>Returns all favorite characters.</returns>
+        </member>
+        <member name="M:SuperheroAPI.Controllers.FavoriteController.GetFavoritesByUserId(System.String)">
+            <summary>
+            Get favorite characters by user ID.
+            </summary>
+            <param name="userId">The user ID.</param>
+            <returns>Returns favorite characters by user ID.</returns>
+        </member>
+        <member name="T:SuperheroAPI.Controllers.SuperheroController">
+            <summary>
+            Controller for managing superheroes.
+            </summary>
+        </member>
+        <member name="M:SuperheroAPI.Controllers.SuperheroController.GetSuperheroInfo(System.Int32)">
+            <summary>
+            Retrieves information about a superhero with the specified ID.
+            </summary>
+            <param name="superheroId">The ID of the superhero to retrieve.</param>
+            <returns>Information about the specified superhero.</returns>
+        </member>
+        <member name="T:SuperheroAPI.Controllers.UserController">
+            <summary>
+            Controller for managing user data.
+            </summary>
+        </member>
+        <member name="M:SuperheroAPI.Controllers.UserController.#ctor(SuperheroAPI.Services.Interfaces.IUserService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SuperheroAPI.Controllers.UserController"/> class.
+            </summary>
+            <param name="userService">The user service.</param>
+        </member>
+        <member name="M:SuperheroAPI.Controllers.UserController.CreateUser(System.String)">
+            <summary>
+            Create a new user.
+            </summary>
+            <param name="username">The username of the new user.</param>
+            <returns>Returns the newly created user.</returns>
+        </member>
+        <member name="M:SuperheroAPI.Controllers.UserController.GetUserById(System.String)">
+            <summary>
+            Get a user by ID.
+            </summary>
+            <param name="userId">The ID of the user to retrieve.</param>
+            <returns>Returns the user with the specified ID.</returns>
+        </member>
+    </members>
+</doc>
